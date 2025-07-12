@@ -18,6 +18,15 @@ const PlantCard = ({ plant }: PlantCardProps) => {
     dispatch(addToCart(plant));
   };
 
+  const formatPrice = (price: number) => {
+    return new Intl.NumberFormat('id-ID', {
+      style: 'currency',
+      currency: 'IDR',
+      minimumFractionDigits: 0,
+      maximumFractionDigits: 0
+    }).format(price);
+  };
+
   return (
     <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
       <CardContent className="p-0">
@@ -36,7 +45,7 @@ const PlantCard = ({ plant }: PlantCardProps) => {
           <h3 className="text-xl font-semibold text-gray-900 mb-2">{plant.name}</h3>
           <p className="text-gray-600 text-sm mb-4">{plant.description}</p>
           <div className="flex items-center justify-between">
-            <span className="text-2xl font-bold text-green-700">${plant.price}</span>
+            <span className="text-2xl font-bold text-green-700">{formatPrice(plant.price)}</span>
           </div>
         </div>
       </CardContent>
@@ -47,7 +56,7 @@ const PlantCard = ({ plant }: PlantCardProps) => {
           disabled={isInCart}
           className="w-full bg-green-600 hover:bg-green-700 disabled:bg-gray-300 disabled:cursor-not-allowed transition-colors"
         >
-          {isInCart ? 'Added to Cart' : 'Add to Cart'}
+          {isInCart ? 'Sudah di Keranjang' : 'Tambah ke Keranjang'}
         </Button>
       </CardFooter>
     </Card>

@@ -19,14 +19,14 @@ const Index = () => {
             <h1 className="text-5xl md:text-7xl font-bold">GreenThumb</h1>
           </div>
           <p className="text-xl md:text-2xl mb-8 text-gray-200">
-            Transform your space with beautiful, hand-picked houseplants
+            Tanaman hias pilihan terbaik untuk rumah impian Anda
           </p>
           <Link to="/products">
             <Button 
               size="lg" 
               className="bg-green-600 hover:bg-green-700 text-lg px-8 py-6 group"
             >
-              Get Started
+              Mulai Belanja
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
           </Link>
@@ -37,15 +37,17 @@ const Index = () => {
       <div className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">About GreenThumb</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-6">Tentang GreenThumb</h2>
             <div className="max-w-3xl mx-auto">
               <p className="text-lg text-gray-600 leading-relaxed">
-                At GreenThumb, we believe that every home deserves the beauty and tranquility that plants bring. 
-                Founded by plant enthusiasts, we've spent years curating a collection of the healthiest, 
-                most beautiful houseplants to help you create your perfect indoor garden sanctuary. 
-                Our mission is simple: to make plant parenthood accessible, enjoyable, and successful for everyone, 
-                from beginners taking their first steps into the world of plants to seasoned collectors 
-                looking for that next special addition to their green family.
+                GreenThumb lahir dari kecintaan mendalam terhadap tanaman hias dan keinginan untuk berbagi kebahagiaan 
+                bercocok tanam dengan setiap orang. Kami memulai bisnis ini dari rumah kecil di Jakarta tahun 2019, 
+                dengan koleksi hanya 20 tanaman. Sekarang, kami bangga melayani ribuan pecinta tanaman di seluruh Indonesia.
+                <br /><br />
+                Setiap tanaman yang kami jual telah melalui proses seleksi ketat - dari bibit berkualitas tinggi, 
+                perawatan ekstra selama masa pertumbuhan, hingga pengemasan khusus yang memastikan tanaman sampai 
+                di tangan Anda dalam kondisi prima. Tim kami terdiri dari para ahli botani dan pecinta tanaman 
+                berpengalaman yang siap membantu perjalanan berkebun Anda.
               </p>
             </div>
           </div>
@@ -56,9 +58,9 @@ const Index = () => {
               <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Leaf className="h-8 w-8 text-green-600" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Hand-Selected Plants</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Tanaman Pilihan Terbaik</h3>
               <p className="text-gray-600">
-                Every plant is carefully chosen for its health, beauty, and ability to thrive in your home.
+                Setiap tanaman dipilih langsung oleh tim ahli kami untuk memastikan kualitas dan kesehatan terbaik.
               </p>
             </div>
 
@@ -66,9 +68,9 @@ const Index = () => {
               <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Heart className="h-8 w-8 text-green-600" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Expert Care Guidance</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Panduan Perawatan Lengkap</h3>
               <p className="text-gray-600">
-                Get detailed care instructions and ongoing support to help your plants flourish.
+                Dapatkan tips perawatan detail dan konsultasi gratis dari para ahli tanaman berpengalaman kami.
               </p>
             </div>
 
@@ -76,9 +78,9 @@ const Index = () => {
               <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Truck className="h-8 w-8 text-green-600" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Safe Delivery</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Pengiriman Aman & Cepat</h3>
               <p className="text-gray-600">
-                Plants arrive healthy and happy with our specialized packaging and fast shipping.
+                Tanaman dikemas dengan sistem khusus anti-rusak dan dikirim dengan ekspedisi terpercaya.
               </p>
             </div>
           </div>

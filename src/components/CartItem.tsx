@@ -24,6 +24,15 @@ const CartItem = ({ item }: CartItemProps) => {
     dispatch(removeFromCart(item.id));
   };
 
+  const formatPrice = (price: number) => {
+    return new Intl.NumberFormat('id-ID', {
+      style: 'currency',
+      currency: 'IDR',
+      minimumFractionDigits: 0,
+      maximumFractionDigits: 0
+    }).format(price);
+  };
+
   return (
     <Card className="p-6">
       <div className="flex items-center space-x-4">
@@ -35,7 +44,7 @@ const CartItem = ({ item }: CartItemProps) => {
         
         <div className="flex-1">
           <h3 className="text-lg font-semibold text-gray-900">{item.name}</h3>
-          <p className="text-gray-600">${item.price} per plant</p>
+          <p className="text-gray-600">{formatPrice(item.price)} per tanaman</p>
         </div>
 
         <div className="flex items-center space-x-3">
@@ -62,7 +71,7 @@ const CartItem = ({ item }: CartItemProps) => {
 
         <div className="text-right">
           <p className="text-lg font-bold text-green-700">
-            ${(item.price * item.quantity).toFixed(2)}
+            {formatPrice(item.price * item.quantity)}
           </p>
         </div>
 

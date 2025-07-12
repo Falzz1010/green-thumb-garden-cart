@@ -25,7 +25,7 @@ const Header = () => {
                   : 'text-gray-600 hover:text-green-700'
               }`}
             >
-              Shop Plants
+              Katalog Tanaman
             </Link>
             
             <Link 
